@@ -1,17 +1,17 @@
 {{ define "main" }}
-
-<p>Coming soon</p>
-
-<h2>Your new favourite imaginator <small>(and web dev)</small> :</h2>
-
-<span class="kayak">
-  <h1 class="kayak-name">
-    &lt;kayak /&gt;
-  </h1>
-</span>
-
-<div>
-  Follow me on Twitter: <a href="https://twitter.com/__kayak__">@__kayak__</a>
-</div>
-
+<main aria-role="main">
+  <header class="homepage-header">
+    <h1 class="uppercase">{{.Title}}</h1>
+    {{ with .Params.subtitle }}
+    <span class="subtitle">{{.}}</span>
+    {{ end }}
+  </header>
+  <div class="homepage-content">
+    <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+    {{.Content}}
+  </div>
+  <div>
+    {{ range first 10 .Site.RegularPages }} {{ .Render "summary"}} {{ end }}
+  </div>
+</main>
 {{ end }}
