@@ -1,32 +1,48 @@
-/*
-  You can use import statements to include partials:
- */
-@import 'imports/reset.css';
+@import "imports/reset.css";
 
-/*
-  Or add your statements here:
- */
 body {
-  font-size: calc(10px + 1vmin);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
+  background-color: #2d2d2d;
+  color: #f1f1f1;
+  font-family: Helvetica, Ubuntu, "DejaVu Sans", Arial, sans-serif;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  background-color: #282c34;
-  color: white;
+  height: 100vh;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24pt;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+h1,
+h2,
+p {
+  margin: 10px;
+}
+
+small,
+p {
+  font-size: 12pt;
 }
 
 a {
-  color: pink;
+  color: #bd72f7;
   text-decoration: none;
 }
 
-.content {
-  padding: 0 32px;
+.kayak {
+  background-image: linear-gradient(#00000000 60%, #7a36ae 55%);
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.kayak-name {
+  font-family: monospace;
+  font-weight: 700;
 }
