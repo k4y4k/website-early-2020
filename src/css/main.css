@@ -1,0 +1,48 @@
+@import "imports/reset.css";
+
+body {
+  background-color: #2d2d2d;
+  color: #f1f1f1;
+  font-family: Helvetica, Ubuntu, "DejaVu Sans", Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24pt;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+h1,
+h2,
+p {
+  margin: 10px;
+}
+
+small,
+p {
+  font-size: 12pt;
+}
+
+a {
+  color: #bd72f7;
+  text-decoration: none;
+}
+
+.kayak {
+  background-image: linear-gradient(#00000000 60%, #7a36ae 55%);
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.kayak-name {
+  font-family: monospace;
+  font-weight: 700;
+}
