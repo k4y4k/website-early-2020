@@ -1,5 +1,10 @@
 {
-	"extends": ["config:base", ":maintainLockFilesWeekly", ":automergeAll"],
-	"requiredStatusChecks": null,
-	"masterIssueApproval": true
+  "extends": [
+    "config:base",
+    ":maintainLockFilesWeekly",
+    ":automergeAll",
+    ":automergeBranch"
+  ],
+  "masterIssue": true,
+  "masterIssueAutoclose": true
 }
