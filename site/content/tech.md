@@ -1,7 +1,8 @@
 ---
-title: "tech"
+title: "Tech"
 date: 2018-11-14T19:02:50-07:00
-draft: true
+draft: false
+description: "some tech - an article I didn't write and won't read and uses the CAT EMOJI"
 ---
 
 # [Victor Hugo](https://github.com/netlify-templates/victor-hugo)

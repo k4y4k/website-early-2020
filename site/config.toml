@@ -1,6 +1,4 @@
 baseurl = "/"
-languageCode = "en-au"
-languageLang = "en"
 title = "Coming Soon | <kayak />"
 
 # RSS, categories and tags disabled for an easy start

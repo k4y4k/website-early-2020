@@ -1,17 +1,29 @@
 {{ define "main" }}
 <main aria-role="main">
-  <header class="homepage-header">
+  <header class="homepage-header bg-purple-800 text-center p-2 mb-1 font-mono">
     <h1 class="uppercase">{{.Title}}</h1>
-    {{ with .Params.subtitle }}
-    <span class="subtitle">{{.}}</span>
-    {{ end }}
   </header>
-  <div class="homepage-content">
-    <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
-    {{.Content}}
-  </div>
-  <div>
-    {{ range first 10 .Site.RegularPages }} {{ .Render "summary"}} {{ end }}
+  <div id="blog">
+    <h2
+      class="uppercase m-2 p-2 text-purple-500 font-black inline-block text-2xl"
+    >
+      blog
+    </h2>
+
+    <div class="blog-listing">
+      <section class="cards">
+        {{ range .Site.RegularPages }}
+
+        <div class="card">
+          <h3 class="uppercase text-xl font-black">{{ .Page.Title }}</h3>
+          <p>{{ .Page.Description }}</p>
+        </div>
+
+        {{ end }}
+      </section>
+    </div>
+
+    <!-- qq -->
   </div>
 </main>
 {{ end }}
