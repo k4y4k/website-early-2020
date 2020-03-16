@@ -10,39 +10,31 @@ body {
   font-family: Helvetica, Ubuntu, "DejaVu Sans", Arial, sans-serif;
 }
 
-main {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .card {
   flex: 0 1 calc(33% - 0.5em);
-  box-sizing: border-box;
   background-color: #22d07f;
-  padding: 1rem;
-  margin-bottom: 1em;
-}
-
-.blog-listing {
-  margin: 10px;
 }
 
 @media screen and (max-width: 32.5em) {
   .card {
     flex: 0 1 calc(100%);
-    background-color: #fff;
   }
 }
 
 @media screen and (min-width: 32.5em) and (max-width: 50em) {
   .card {
     flex: 0 1 calc(50% - 0.5em);
-    background-color: #666;
   }
+}
+
+#hero,
+#contact,
+#about,
+#blog,
+#work {
+  min-height: 100vh;
+}
+
+#blog {
+  max-width: 960px;
 }
