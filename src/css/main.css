@@ -35,6 +35,6 @@ body {
   min-height: 100vh;
 }
 
-#blog {
+.card-wrapper {
   max-width: 960px;
 }

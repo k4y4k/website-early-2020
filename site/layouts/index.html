@@ -13,6 +13,18 @@
     <h1>
       <span class="font-mono">#work</span> shows off things I've done before
     </h1>
+    <div class="m-2 card-wrapper mx-auto">
+      <section class="cards flex flex-wrap justify-between">
+        {{ range .Site.RegularPages }}
+
+        <div class="card box-border p-4 mb-4">
+          <h3 class="uppercase text-xl font-black">{{ .Page.Title }}</h3>
+          <p>{{ .Page.Description }}</p>
+        </div>
+
+        {{ end }}
+      </section>
+    </div>
   </div>
 
   <div id="about" class="bg-indigo-700">
@@ -33,7 +45,7 @@
       blog
     </h2>
 
-    <div class="blog-listing m-2">
+    <div class="m-2 card-wrapper mx-auto">
       <section class="cards flex flex-wrap justify-between">
         {{ range .Site.RegularPages }}
 
