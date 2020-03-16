@@ -1,20 +1,43 @@
 {{ define "main" }}
-<main aria-role="main">
-  <header class="homepage-header bg-purple-800 text-center p-2 mb-1 font-mono">
-    <h1 class="uppercase">{{.Title}}</h1>
-  </header>
-  <div id="blog">
+<header class="homepage-header bg-purple-700 text-center p-2 mb-1 font-mono">
+  <h3 class="uppercase">{{.Title}}</h3>
+</header>
+<main aria-role="main" class="mx-auto">
+  <div id="hero" class="bg-yellow-700">
+    <h1>
+      <span class="font-mono">#hero </span> is the first impressions maker
+    </h1>
+  </div>
+
+  <div id="work" class="bg-red-700">
+    <h1>
+      <span class="font-mono">#work</span> shows off things I've done before
+    </h1>
+  </div>
+
+  <div id="about" class="bg-indigo-700">
+    <h1><span class="font-mono">#about</span> tells people how cool I am</h1>
+  </div>
+
+  <div id="contact" class="bg-orange-700">
+    <h1>
+      <span class="font-mono">#contact</span> tells people how they can talk 2
+      me
+    </h1>
+  </div>
+
+  <div id="blog" class="mx-auto">
     <h2
       class="uppercase m-2 p-2 text-purple-500 font-black inline-block text-2xl"
     >
       blog
     </h2>
 
-    <div class="blog-listing">
-      <section class="cards">
+    <div class="blog-listing m-2">
+      <section class="cards flex flex-wrap justify-between">
         {{ range .Site.RegularPages }}
 
-        <div class="card">
+        <div class="card box-border p-4 mb-4">
           <h3 class="uppercase text-xl font-black">{{ .Page.Title }}</h3>
           <p>{{ .Page.Description }}</p>
         </div>
@@ -26,4 +49,7 @@
     <!-- qq -->
   </div>
 </main>
+<footer id="footer" class="bg-blue-700 text-center p-2 mb-1 font-mono">
+  <h3>this is the footer</h3>
+</footer>
 {{ end }}
