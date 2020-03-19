@@ -29,7 +29,6 @@ body {
 }
 
 .card-wrapper {
-  @apply p-4;
   max-width: 1200px;
 }
 
