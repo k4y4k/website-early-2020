@@ -1,24 +1,39 @@
 {{ define "main" }}
 
 <main aria-role="main" class="mx-auto">
-  <div id="hero" class="flex flex-col items-center justify-center ">
-    <div class="text-center m-2 md:p-6 ">
-      <h1 class="font-black text-6xl font-mono">
-        &lt;kayak/&gt;
+  <div id="hero" class="flex flex-col items-center justify-center">
+    <div class="text-center m-2 md:p-6">
+      <h1 class="font-black text-6xl font-mono tracking-tight">
+        <span class="text-purple-600">&lt;</span>kayak<span
+          class="text-purple-600"
+          >/&gt;</span
+        >
       </h1>
-      <p>
-        web developer, designer and shirt wearer from brisbane, australia
+      <p class="mb-4">
+        web developer and designer from brisbane, australia
         <small>(crikey)</small>
       </p>
+
+      <div class="block mb-2">
       <button
-        class="uppercase m-2 border border-purple-700 p-2 rounded-md hover:border-0 hover:bg-purple-700 inline-block"
+          class="uppercase border border-purple-600 p-2 rounded-md hover:border-0 hover:bg-purple-600 inline-block"
       >
         get in touch
       </button>
-      <br class="mb-10" />
+      </div>
 
-      <button class="uppercase border p-2">github</button>
-      <button class="uppercase border p-2">twitter</button>
+      <div class=" p-2 block">
+        <button
+          class="uppercase border border-purple-600 p-2 rounded-md hover:border-0 hover:bg-purple-600 inline-block mx-2"
+        >
+          <i class="icon-github"></i>
+        </button>
+        <button
+          class="uppercase border border-purple-600 p-2 rounded-md hover:border-0 hover:bg-purple-600 inline-block mx-2"
+        >
+          <i class="icon-twitter"></i>
+        </button>
+      </div>
     </div>
   </div>
 

@@ -1,5 +1,6 @@
-/*@import "imports/reset.css";*/
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;700&display=swap");
+@import "./imports/fontello-embedded.css";
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -28,11 +29,14 @@ body {
   }
 }
 
+.card-wrapper {
+  @apply p-4;
+}
+
 #hero,
 #contact,
 #about,
-#blog,
-#work {
+#blog {
   height: 100vh;
 }
 
