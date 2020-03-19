@@ -15,11 +15,11 @@
       </p>
 
       <div class="block mb-2">
-      <button
+        <button
           class="uppercase border border-purple-600 p-2 rounded-md hover:border-0 hover:bg-purple-600 inline-block"
-      >
-        get in touch
-      </button>
+        >
+          get in touch
+        </button>
       </div>
 
       <div class=" p-2 block">
@@ -37,10 +37,13 @@
     </div>
   </div>
 
-  <div id="work" class="bg-red-700">
-    <h1>
-      <span class="font-mono">#work</span> shows off things I've done before
-    </h1>
+  <div id="work">
+    <h2 class="text-2xl text-center font-mono p-4">
+      <span class="text-purple-600">console.table(</span>previousWork<span
+        class="text-purple-600"
+        >);</span
+      >
+    </h2>
     <div class="m-2 card-wrapper mx-auto">
       <section class="cards flex flex-wrap justify-between">
         {{ range .Site.RegularPages }}
@@ -68,7 +71,7 @@
 
   <div id="blog" class="mx-auto">
     <h2
-      class="uppercase m-2 p-2 text-purple-500 font-black inline-block text-2xl"
+      class="uppercase m-2 p-2 text-purple-600 font-black inline-block text-2xl"
     >
       blog
     </h2>
