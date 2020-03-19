@@ -45,15 +45,17 @@
       >
     </h2>
     <div class="m-2 card-wrapper mx-auto">
-      <section class="cards flex flex-wrap justify-between">
-        {{ range .Site.RegularPages }}
+      <section class="cards flex flex-wrap justify-center">
+        {{ range .Site.Sections }} {{ range first 100 .Pages }}
 
-        <div class="card box-border p-4 mb-4">
-          <h3 class="uppercase text-xl font-black">{{ .Page.Title }}</h3>
+        <div class="card box-border p-4 m-2 border border-purple-600">
+          <h3 class="uppercase text-xl font-black">
+            {{ .Page.Title }}
+          </h3>
           <p>{{ .Page.Description }}</p>
         </div>
 
-        {{ end }}
+        {{ end }} {{ end }}
       </section>
     </div>
   </div>
@@ -77,15 +79,13 @@
     </h2>
 
     <div class="m-2 card-wrapper mx-auto">
-      <section class="cards flex flex-wrap justify-between">
-        {{ range .Site.RegularPages }}
-
-        <div class="card box-border p-4 mb-4">
+      <section class="cards flex flex-wrap justify-center">
+        {{ range .Site.RegularPages }} {{ if ne .Section "projects"}}
+        <div class="card box-border p-4 m-2 border border-purple-600">
           <h3 class="uppercase text-xl font-black">{{ .Page.Title }}</h3>
           <p>{{ .Page.Description }}</p>
         </div>
-
-        {{ end }}
+        {{end}} {{ end }}
       </section>
     </div>
 
