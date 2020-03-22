@@ -14,7 +14,6 @@ body {
 
 .card {
   flex: 0 1 calc(33% - 0.5em);
-  background-color: #22d07f;
 }
 
 @media screen and (max-width: 32.5em) {
@@ -30,14 +29,14 @@ body {
 }
 
 .card-wrapper {
-  @apply p-4;
+  max-width: 1200px;
 }
 
 #hero,
 #contact,
 #about,
 #blog {
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 .hero-img {

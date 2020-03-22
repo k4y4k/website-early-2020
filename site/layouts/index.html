@@ -15,11 +15,11 @@
       </p>
 
       <div class="block mb-2">
-      <button
+        <button
           class="uppercase border border-purple-600 p-2 rounded-md hover:border-0 hover:bg-purple-600 inline-block"
-      >
-        get in touch
-      </button>
+        >
+          get in touch
+        </button>
       </div>
 
       <div class=" p-2 block">
@@ -37,20 +37,40 @@
     </div>
   </div>
 
-  <div id="work" class="bg-red-700">
-    <h1>
-      <span class="font-mono">#work</span> shows off things I've done before
-    </h1>
-    <div class="m-2 card-wrapper mx-auto">
-      <section class="cards flex flex-wrap justify-between">
-        {{ range .Site.RegularPages }}
+  <div id="work">
+    <h2 class="text-2xl text-center font-mono p-4">
+      <span class="text-purple-600">console.table(</span>previousWork<span
+        class="text-purple-600"
+        >);</span
+      >
+    </h2>
+    <div class="card-wrapper p-2 m-2 mx-auto">
+      <section class="cards flex flex-wrap justify-center">
+        <!-- TODO: find that CSS Grid trick to make different-length cards all behave -->
 
-        <div class="card box-border p-4 mb-4">
-          <h3 class="uppercase text-xl font-black">{{ .Page.Title }}</h3>
-          <p>{{ .Page.Description }}</p>
+        {{ range .Site.Sections }} {{ range first 100 .Pages }}
+
+        <div class="card box-border p-4 m-2 border border-purple-600">
+          <p class="m-32">image here</p>
+
+          <h3
+            class="uppercase text-xl font-black hover:text-purple-600 hover:underline"
+          >
+            <a href="{{ .Permalink }}">
+              {{ .Page.Title }}
+            </a>
+          </h3>
+          <p class="mb-4">{{ .Page.Description }}</p>
+
+          <span class="bg-purple-600 p-2 text-xs uppercase flex-start mr-2">
+            uses this
+          </span>
+          <span class="bg-purple-600 p-2 text-xs uppercase flex-start mr-2">
+            and this
+          </span>
         </div>
 
-        {{ end }}
+        {{ end }} {{ end }}
       </section>
     </div>
   </div>
@@ -68,21 +88,25 @@
 
   <div id="blog" class="mx-auto">
     <h2
-      class="uppercase m-2 p-2 text-purple-500 font-black inline-block text-2xl"
+      class="uppercase m-2 p-2 text-purple-600 font-black inline-block text-2xl"
     >
       blog
     </h2>
 
-    <div class="m-2 card-wrapper mx-auto">
-      <section class="cards flex flex-wrap justify-between">
-        {{ range .Site.RegularPages }}
-
-        <div class="card box-border p-4 mb-4">
-          <h3 class="uppercase text-xl font-black">{{ .Page.Title }}</h3>
+    <div class="card-wrapper p-2 m-2 mx-auto">
+      <section class="cards flex flex-wrap justify-center">
+        {{ range .Site.RegularPages }} {{ if ne .Section "projects"}}
+        <div class="card box-border p-4 m-2 border border-purple-600">
+          <h3
+            class="uppercase text-xl font-black hover:text-purple-600 hover:underline"
+          >
+            <a href="{{ .Permalink }}">
+              {{ .Page.Title }}
+            </a>
+          </h3>
           <p>{{ .Page.Description }}</p>
         </div>
-
-        {{ end }}
+        {{end}} {{ end }}
       </section>
     </div>
 

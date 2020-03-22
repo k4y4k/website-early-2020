@@ -5,6 +5,4 @@ draft: false
 description: "come with me on the comedy journey of a lifetime"
 ---
 
-What do you call kayak in a good mood?
-
-kayak having a kayay
+kaynay says no
