@@ -1,7 +1,9 @@
 import React from 'react'
+import Title from '../components/index/Title.js'
+import Section from '../components/common/Section.js'
 
 export default () => (
-  <div className='bg-grey-500'>
-    <h1 className='font-mono'>Hello world!</h1>
-  </div>
+  <Section>
+    <Title />
+  </Section>
 )
