@@ -1,12 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const classnames = [
-  'text-center',
-  'font-display',
-  'text-6xl',
-  'tracking-tighter',
-]
+const classnames = ['font-display', 'text-6xl', 'tracking-tighter', 'font-bold']
 
 const UnstyledTitle = ({ className }) => (
   <h1 className={`${className} ${classnames.join(' ')}`}>

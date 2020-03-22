@@ -7,4 +7,5 @@
 body {
   @apply bg-background;
   @apply text-gray-100;
+  @apply font-body;
 }
