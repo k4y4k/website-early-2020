@@ -5,6 +5,7 @@ import Subtitle from '../components/index/Subtitle'
 import Button from '../components/common/Button'
 import { Github, Twitter } from '@icons-pack/react-simple-icons'
 import CardContainer from '../components/cards/CardContainer'
+import BlogListing from '../components/blog/BlogListing'
 
 export default () => (
   <React.Fragment>
@@ -36,7 +37,9 @@ export default () => (
     <Section>
       <CardContainer />
     </Section>
-    <Section>blog</Section>
+    <Section>
+      <BlogListing />
+    </Section>
     <div className='font-mono bg-purple-800 p-2'>this is the footer</div>
   </React.Fragment>
 )
