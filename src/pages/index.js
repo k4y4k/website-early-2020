@@ -6,6 +6,7 @@ import Button from '../components/common/Button'
 import { Github, Twitter } from '@icons-pack/react-simple-icons'
 import CardContainer from '../components/cards/CardContainer'
 import BlogListing from '../components/blog/BlogListing'
+import Footer from '../components/index/Footer'
 
 export default () => (
   <React.Fragment>
@@ -40,6 +41,6 @@ export default () => (
     <Section>
       <BlogListing />
     </Section>
-    <div className='font-mono bg-purple-800 p-2'>this is the footer</div>
+    <Footer />
   </React.Fragment>
 )

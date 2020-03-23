@@ -9,7 +9,7 @@ const UnstyledBlogListing = ({ className, children }) => (
   <div className={className}>
     <Title>blog</Title>
     <div
-      className='flex flex-wrap mx-auto justify-between'
+      className='flex flex-wrap mx-auto align-center justify-center'
       style={{ maxWidth: 960 }}
     >
       {data.map(datum => (
@@ -23,4 +23,6 @@ const UnstyledBlogListing = ({ className, children }) => (
   </div>
 )
 
-export default styled(UnstyledBlogListing)``
+export default styled(UnstyledBlogListing)`
+  margin: 0 auto;
+`

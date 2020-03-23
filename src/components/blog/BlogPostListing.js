@@ -18,7 +18,7 @@ const UnstyledBlogPostListing = ({
   date,
   description,
 }) => (
-  <div className={`${className} p-4 my-4 border border-purple-600`}>
+  <div className={`${className} p-4 m-1 border border-purple-600`}>
     <h3 className='uppercase text-xl font-black font-display mb-2 hover:underline'>
       {name}
     </h3>
