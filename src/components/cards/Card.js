@@ -1,17 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
+import {
+  ReactJs,
+  Javascript,
+  Mongodb,
+  Electron,
+  Tailwindcss,
+  Sass,
+} from '@icons-pack/react-simple-icons'
 
 const cardContainerClasses = ['border', 'border-purple-600', 'm-4', 'p-4']
 
-const usesClasses = [
-  'font-black',
-  'text-sm',
-  'uppercase',
-  'border',
-  'border-purple-600',
-  'px-1',
-  'm-1',
-]
+const usesClasses = ['font-black', 'text-sm', 'uppercase', 'p-1', 'm-1']
 
 const UnstyledCard = ({ className, children, name, description, uses }) => (
   <div className={`${className} ${cardContainerClasses.join(' ')}`}>
@@ -20,9 +20,16 @@ const UnstyledCard = ({ className, children, name, description, uses }) => (
 
     <hr className='bg-purple-600 mb-4 border-0 h-px' />
 
-    <div className='flex  w-full flex-wrap'>
+    <div className='flex w-full flex-wrap'>
       {uses.map(use => (
-        <p className={usesClasses.join(' ')}>{use}</p>
+        <p className={usesClasses.join(' ')}>
+          {use === 'React' ? <ReactJs color='#61DAFB' /> : null}
+          {use === 'JavaScript' ? <Javascript color='#F7DF1E' /> : null}
+          {use === 'mongoDB' ? <Mongodb color='#47A248' /> : null}
+          {use === 'Electron' ? <Electron color='#47848F' /> : null}
+          {use === 'tailwindCSS' ? <Tailwindcss color='#38B2AC' /> : null}
+          {use === 'Sass' ? <Sass color='#CC6699' /> : null}
+        </p>
       ))}
     </div>
   </div>

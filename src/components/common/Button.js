@@ -8,7 +8,6 @@ const classes = [
   'hover:bg-purple-600',
   'p-2',
   'm-2',
-  'rounded-md',
 ]
 
 const UnstyledButton = ({ children, className, filled }) => {
