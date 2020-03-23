@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Project",
+    "uses": ["JavaScript", "React", "mongoDB"],
+    "description": "description description description description description"
+  },
+  {
+    "name": "Project 2",
+    "uses": ["JavaScript", "React", "Electron", "tailwindCSS"],
+    "description": "description description description description description"
+  }
+]

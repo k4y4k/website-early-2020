@@ -4,28 +4,39 @@ import Section from '../components/common/Section'
 import Subtitle from '../components/index/Subtitle'
 import Button from '../components/common/Button'
 import { Github, Twitter } from '@icons-pack/react-simple-icons'
+import CardContainer from '../components/cards/CardContainer'
 
 export default () => (
-  <Section centred={true}>
-    <div>
-      <Title />
-      <Subtitle />
+  <React.Fragment>
+    <Section centred={true}>
+      <div>
+        <Title />
+        <Subtitle />
 
-      <div className='flex  justify-center mt-4 mb-4'>
-        <Button>
-          <a href='https://github.com/k4y4k'>
-            <Github />
-          </a>
-        </Button>
-        <Button>
-          <a href='https://twitter.com/__kayak__'>
-            <Twitter />
-          </a>
-        </Button>
-        <Button filled>
-          <a href='mailto:kayak@kayak.rocks'>get in touch</a>
-        </Button>
+        <div className='flex justify-center mt-4 mb-4'>
+          <Button>
+            <a href='https://github.com/k4y4k'>
+              <Github />
+            </a>
+          </Button>
+          <Button>
+            <a href='https://twitter.com/__kayak__'>
+              <Twitter />
+            </a>
+          </Button>
+          <Button filled>
+            <a href='mailto:kayak@kayak.rocks'>get in touch</a>
+          </Button>
+        </div>
       </div>
-    </div>
-  </Section>
+    </Section>
+    <Section>
+      <p>my name is kayak, i make websites, please hire me</p>
+    </Section>
+    <Section>
+      <CardContainer />
+    </Section>
+    <Section>blog</Section>
+    <div className='font-mono bg-purple-800 p-2'>this is the footer</div>
+  </React.Fragment>
 )
