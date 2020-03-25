@@ -5,6 +5,7 @@
     ":automergeAll",
     ":automergeBranch"
   ],
+  "requiredStatusChecks": null,
   "masterIssue": true,
   "masterIssueAutoclose": true
 }
