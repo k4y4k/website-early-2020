@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const UnstyledSection = ({ className, children }) => (
-  <div className={className + ' text-center'}>{children}</div>
+const UnstyledSection = ({ className, children, centred }) => (
+  <div className={className + (centred ? ' text-center' : ' ')}>{children}</div>
 )
 
 export default styled(UnstyledSection)`

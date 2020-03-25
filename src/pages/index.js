@@ -4,23 +4,22 @@ import CardContainer from '../components/cards/CardContainer'
 import BlogListing from '../components/blog/BlogListing'
 import Footer from '../components/index/Footer'
 import HeroContainer from '../components/index/HeroContainer'
+import AboutContainer from '../components/index/AboutContainer'
 
 export default () => (
   <React.Fragment>
     <Section centred={true}>
       <HeroContainer />
     </Section>
-    <Section>
-      <p>my name is kayak, i make websites, please hire me</p>
-    </Section>
+
     <Section>
       <CardContainer />
     </Section>
-    {/*
+
     <Section>
-      <BlogListing />
+      <AboutContainer />
     </Section>
-   */}
+
     <Footer />
   </React.Fragment>
 )
