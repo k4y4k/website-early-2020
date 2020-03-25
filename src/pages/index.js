@@ -38,9 +38,11 @@ export default () => (
     <Section>
       <CardContainer />
     </Section>
+    {/*
     <Section>
       <BlogListing />
     </Section>
+   */}
     <Footer />
   </React.Fragment>
 )
