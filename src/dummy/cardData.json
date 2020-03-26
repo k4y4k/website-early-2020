@@ -1,7 +1,7 @@
 [
   {
     "name": "Project",
-    "uses": ["JavaScript", "React", "mongoDB", "Sass"],
+    "uses": ["JavaScript", "React", "Sass"],
     "description": "description description  description description"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "name": "Project",
-    "uses": ["JavaScript", "React", "mongoDB", "Sass"],
+    "uses": ["JavaScript", "React", "Sass"],
     "description": "description  description description description"
   }
 ]
