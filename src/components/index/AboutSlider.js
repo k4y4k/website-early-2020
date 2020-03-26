@@ -33,9 +33,9 @@ const logos = [
   <Tailwindcss size='50' color='#38B2AC' />,
   <Electron size='50' color='#47848F' />,
   <ReactJs size='50' color='#61DAFB' />,
+  <Webpack size='50' color='#8DD6F9' />,
   <Gatsby size='50' color='#663399' />,
   <Redux size='50' color='#764ABC' />,
-  <Webpack size='50' color='#8DD6F9' />,
   <Sass size='50' color='#CC6699' />,
   <Gulp size='50' color='#DA4648' />,
   <StyledComponents size='50' color='#DB7093' />,
@@ -51,7 +51,7 @@ const UnstyledAboutSlider = () => (
   <React.Fragment>
     <Ticker offset='50%'>
       {index => (
-        <div className='m-2'>
+        <div className='m-2 mx-4'>
           <h1>{logos[index.index % (logos.length - 1)]}</h1>
         </div>
       )}
