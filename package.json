@@ -16,7 +16,7 @@
   "dependencies": {
     "@icons-pack/react-simple-icons": "2.7.1",
     "babel-plugin-styled-components": "1.10.7",
-    "gatsby": "2.20.26",
+    "gatsby": "2.20.27",
     "gatsby-plugin-postcss": "2.2.3",
     "gatsby-plugin-styled-components": "3.2.3",
     "react": "16.12.0",
