@@ -28,7 +28,7 @@
     "husky": "4.2.5",
     "prettier": "1.19.1",
     "pretty-quick": "2.0.1",
-    "tailwindcss": "1.4.3"
+    "tailwindcss": "1.4.4"
   },
   "husky": {
     "hooks": {
