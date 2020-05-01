@@ -14,7 +14,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "2.7.1",
+    "@icons-pack/react-simple-icons": "2.8.0",
     "babel-plugin-styled-components": "1.10.7",
     "gatsby": "2.21.9",
     "gatsby-plugin-postcss": "2.3.0",
