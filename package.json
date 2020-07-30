@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "3.8.0",
-    "babel-plugin-styled-components": "1.11.0",
+    "babel-plugin-styled-components": "1.11.1",
     "gatsby": "2.24.15",
     "gatsby-plugin-postcss": "2.3.11",
     "gatsby-plugin-styled-components": "3.3.10",
